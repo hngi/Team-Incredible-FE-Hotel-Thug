@@ -37,6 +37,18 @@ header .navigation-wrapper .desktop-nav {
           align-items: center;
 }
 
+@media screen and (max-width: 850px) {
+  header .navigation-wrapper .desktop-nav {
+    padding: 0 3rem 0 3rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  header .navigation-wrapper .desktop-nav {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+}
+
 @media screen and (max-width: 940px) {
   header .navigation-wrapper .desktop-nav ul {
     display: none;
@@ -152,6 +164,18 @@ footer .footer-wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 850px) {
+  footer .footer-wrapper {
+    padding: 0 3rem 0 3rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  footer .footer-wrapper {
+    padding: 0 1.5rem 0 1.5rem;
+  }
 }
 
 @media screen and (max-width: 1190px) {
