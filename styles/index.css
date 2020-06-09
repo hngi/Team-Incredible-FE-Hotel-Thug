@@ -279,7 +279,7 @@ ul.icons li {
     }
   }
 
-  @media (max-width: 1280px) {
+  @media (min-width: 1280px) {
     .img-holder img {
         width: 695px;
         height: 425px;
@@ -294,10 +294,10 @@ ul.icons li {
     }
   }
 
-  @media (max-width: 1440px) {
-    /* .img-holder img {
-        width: 642px;
-    } */
+  @media (min-width: 1440px) {
+    .img-holder img {
+        width: 673px;
+    }
   }
 
   /* RESPONSIVENESS END */
