@@ -1,18 +1,21 @@
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rooms | Crystal Hotel</title>
         <link href="styles/header&footer.css" rel="stylesheet" />
+        <link href="styles/rooms.css" rel="stylesheet" />
     </head>
+
     <body>
         <!-- Start of Desktop Navigation -->
         <header>
             <section class="navigation-wrapper">
                 <nav class="desktop-nav">
-                   <a href="#">
-                       <img src="images/logo.svg" alt="nav-logo" />
-                   </a> 
+                    <a href="#">
+                        <img src="images/logo.svg" alt="nav-logo" />
+                    </a>
 
                    <ul>
                        <li><a href="./index.html">Home <span></span></a></li>
@@ -21,9 +24,12 @@
                        <li><a href="./contact.html">Contact <span></span></a></li>
                    </ul>
 
-                   <svg data-modal-target="#mobile-nav" id="open-nav" width="35" height="31" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 22.1429H35V17.7143H0V22.1429ZM0 31H35V26.5714H0V31ZM0 13.2857H35V8.85714H0V13.2857ZM0 0V4.42857H35V0H0Z" fill="white" fill-opacity="0.87"/>
-                    </svg>                                        
+                    <svg data-modal-target="#mobile-nav" id="open-nav" width="35" height="31" viewBox="0 0 35 31"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 22.1429H35V17.7143H0V22.1429ZM0 31H35V26.5714H0V31ZM0 13.2857H35V8.85714H0V13.2857ZM0 0V4.42857H35V0H0Z"
+                            fill="white" fill-opacity="0.87" />
+                    </svg>
                 </nav>
             </section>
         </header>
@@ -42,57 +48,380 @@
             </nav>
         </section>
         <!-- End of Mobile Nivagation -->
-
-        <!-- Start of Footer -->
-        <footer>
-            <section class="footer-wrapper">
-                <div class="about-us">
-                    <a href="#">
-                        <img src="images/logo.svg" alt="footer-logo" />
-                    </a>
-
-                    <h3>About Us</h3>
-
-                    <p class="about-text">Crystal Hotel is an elegant and stylish hotel that suites all your needs. Our hotel has all you need for maximum comfort and relaxation. Crystal hotlel is the best place to enjoy your life and get the best value for your money. Our staff are polite and decent in their jobs. Give us a try and you will never regret it because we ensure ultimate cutomer satisfaction.</p>
-                </div>
-
-                <div class="links-wrapper">
-                    <div class="quick-links">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="#">Service</a></li>
-
-                            <li><a href="#">Facilities</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Rooms & Rates</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
+        <main role="main">
+            <div class="jumbotron">
+                <div class="overlay">
+                    <div class="container">
+                        <h1>
+                            Rooms and Rate
+                        </h1>
+                        <h2>
+                            Explore our elegant and sophisticated rooms
+                        </h2>
                     </div>
-    
-                    <div class="flickers">
-                        <h3>Flickers</h3>
-                        <ul class="flikers-links">
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Reviews</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Privacy Policies</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                        </ul>
+                </div>
+            </div>
+            <section>
+                <div class="rooms-grid">
+                    <div class="cards">
+                        <!-- Honeymoon Room -->
+                        <div class="card-container" id="honeymoon">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/honeymoon-room.png" alt="Honeymoon Room">
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <h1>
+                                            Honeymoon Room
+                                        </h1>
+                                        <svg width="25" height="23" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.3827 2.13974C19.5604 -0.233305 15.2001 0.12314 12.4999 2.87216C9.79969 0.12314 5.43934 -0.238188 2.61707 2.13974C-1.0548 5.23056 -0.517694 10.2696 2.09949 12.9405L10.6639 21.6661C11.1522 22.1642 11.8065 22.4425 12.4999 22.4425C13.1981 22.4425 13.8475 22.169 14.3358 21.671L22.9003 12.9454C25.5126 10.2745 26.0595 5.23545 22.3827 2.13974ZM21.2303 11.295L12.6659 20.0206C12.5487 20.1378 12.4511 20.1378 12.3339 20.0206L3.76941 11.295C1.98719 9.47861 1.62586 6.04111 4.12586 3.93662C6.02527 2.33994 8.95496 2.57919 10.7909 4.44931L12.4999 6.19248L14.2089 4.44931C16.0546 2.56943 18.9843 2.33994 20.8739 3.93173C23.369 6.03623 22.9979 9.49326 21.2303 11.295Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="details">
+                                        <span class="text">
+                                            <span class="price">
+                                                ₦ 100.00 &nbsp;
+                                            </span>
+                                            per night
+                                        </span>
+                                        <span class="book-now">
+                                            <img src="./images/book-now-button.svg" alt="Book now">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Executive Room -->
+                        <div class="card-container" id="executive">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/executive-room.png" alt="Executive Room">
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <h1>
+                                            Executive Room
+                                        </h1>
+                                        <svg width="25" height="23" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.3827 2.13974C19.5604 -0.233305 15.2001 0.12314 12.4999 2.87216C9.79969 0.12314 5.43934 -0.238188 2.61707 2.13974C-1.0548 5.23056 -0.517694 10.2696 2.09949 12.9405L10.6639 21.6661C11.1522 22.1642 11.8065 22.4425 12.4999 22.4425C13.1981 22.4425 13.8475 22.169 14.3358 21.671L22.9003 12.9454C25.5126 10.2745 26.0595 5.23545 22.3827 2.13974ZM21.2303 11.295L12.6659 20.0206C12.5487 20.1378 12.4511 20.1378 12.3339 20.0206L3.76941 11.295C1.98719 9.47861 1.62586 6.04111 4.12586 3.93662C6.02527 2.33994 8.95496 2.57919 10.7909 4.44931L12.4999 6.19248L14.2089 4.44931C16.0546 2.56943 18.9843 2.33994 20.8739 3.93173C23.369 6.03623 22.9979 9.49326 21.2303 11.295Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="details">
+                                        <span class="text">
+                                            <span class="price">
+                                                ₦ 150.00 &nbsp;
+                                            </span>
+                                            per night
+                                        </span>
+                                        <span class="book-now">
+                                            <img src="./images/book-now-button.svg" alt="Book now">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Superior Room -->
+                        <div class="card-container" id="superior">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/superior-room.png" alt="Superior Room">
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <h1>
+                                            Superior Room
+                                        </h1>
+                                        <svg width="25" height="23" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.3827 2.13974C19.5604 -0.233305 15.2001 0.12314 12.4999 2.87216C9.79969 0.12314 5.43934 -0.238188 2.61707 2.13974C-1.0548 5.23056 -0.517694 10.2696 2.09949 12.9405L10.6639 21.6661C11.1522 22.1642 11.8065 22.4425 12.4999 22.4425C13.1981 22.4425 13.8475 22.169 14.3358 21.671L22.9003 12.9454C25.5126 10.2745 26.0595 5.23545 22.3827 2.13974ZM21.2303 11.295L12.6659 20.0206C12.5487 20.1378 12.4511 20.1378 12.3339 20.0206L3.76941 11.295C1.98719 9.47861 1.62586 6.04111 4.12586 3.93662C6.02527 2.33994 8.95496 2.57919 10.7909 4.44931L12.4999 6.19248L14.2089 4.44931C16.0546 2.56943 18.9843 2.33994 20.8739 3.93173C23.369 6.03623 22.9979 9.49326 21.2303 11.295Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="details">
+                                        <span class="text">
+                                            <span class="price">
+                                                ₦ 100.00 &nbsp;
+                                            </span>
+                                            per night
+                                        </span>
+                                        <span class="book-now">
+                                            <img src="./images/book-now-button.svg" alt="Book now">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Elegant Room -->
+                        <div class="card-container" id="elegant">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/elegant-room.png" alt="Elegant Room">
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <h1>
+                                            Elegant Room
+                                        </h1>
+                                        <svg width="25" height="23" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.3827 2.13974C19.5604 -0.233305 15.2001 0.12314 12.4999 2.87216C9.79969 0.12314 5.43934 -0.238188 2.61707 2.13974C-1.0548 5.23056 -0.517694 10.2696 2.09949 12.9405L10.6639 21.6661C11.1522 22.1642 11.8065 22.4425 12.4999 22.4425C13.1981 22.4425 13.8475 22.169 14.3358 21.671L22.9003 12.9454C25.5126 10.2745 26.0595 5.23545 22.3827 2.13974ZM21.2303 11.295L12.6659 20.0206C12.5487 20.1378 12.4511 20.1378 12.3339 20.0206L3.76941 11.295C1.98719 9.47861 1.62586 6.04111 4.12586 3.93662C6.02527 2.33994 8.95496 2.57919 10.7909 4.44931L12.4999 6.19248L14.2089 4.44931C16.0546 2.56943 18.9843 2.33994 20.8739 3.93173C23.369 6.03623 22.9979 9.49326 21.2303 11.295Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="details">
+                                        <span class="text">
+                                            <span class="price">
+                                                ₦ 150.00 &nbsp;
+                                            </span>
+                                            per night
+                                        </span>
+                                        <span class="book-now">
+                                            <img src="./images/book-now-button.svg" alt="Book now">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Deluxe Room -->
+                        <div class="card-container" id="deluxe">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/deluxe-room.png" alt="Deluxe Room">
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <h1>
+                                            Deluxe Room
+                                        </h1>
+                                        <svg width="25" height="23" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.3827 2.13974C19.5604 -0.233305 15.2001 0.12314 12.4999 2.87216C9.79969 0.12314 5.43934 -0.238188 2.61707 2.13974C-1.0548 5.23056 -0.517694 10.2696 2.09949 12.9405L10.6639 21.6661C11.1522 22.1642 11.8065 22.4425 12.4999 22.4425C13.1981 22.4425 13.8475 22.169 14.3358 21.671L22.9003 12.9454C25.5126 10.2745 26.0595 5.23545 22.3827 2.13974ZM21.2303 11.295L12.6659 20.0206C12.5487 20.1378 12.4511 20.1378 12.3339 20.0206L3.76941 11.295C1.98719 9.47861 1.62586 6.04111 4.12586 3.93662C6.02527 2.33994 8.95496 2.57919 10.7909 4.44931L12.4999 6.19248L14.2089 4.44931C16.0546 2.56943 18.9843 2.33994 20.8739 3.93173C23.369 6.03623 22.9979 9.49326 21.2303 11.295Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="details">
+                                        <span class="text">
+                                            <span class="price">
+                                                ₦ 150.00 &nbsp;
+                                            </span>
+                                            per night
+                                        </span>
+                                        <span class="book-now">
+                                            <img src="./images/book-now-button.svg" alt="Book now">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Room-->
+                        <div class="card-container" id="single">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/single-room.png" alt="Single Room">
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <h1>
+                                            Single Room
+                                        </h1>
+                                        <svg width="25" height="23" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.3827 2.13974C19.5604 -0.233305 15.2001 0.12314 12.4999 2.87216C9.79969 0.12314 5.43934 -0.238188 2.61707 2.13974C-1.0548 5.23056 -0.517694 10.2696 2.09949 12.9405L10.6639 21.6661C11.1522 22.1642 11.8065 22.4425 12.4999 22.4425C13.1981 22.4425 13.8475 22.169 14.3358 21.671L22.9003 12.9454C25.5126 10.2745 26.0595 5.23545 22.3827 2.13974ZM21.2303 11.295L12.6659 20.0206C12.5487 20.1378 12.4511 20.1378 12.3339 20.0206L3.76941 11.295C1.98719 9.47861 1.62586 6.04111 4.12586 3.93662C6.02527 2.33994 8.95496 2.57919 10.7909 4.44931L12.4999 6.19248L14.2089 4.44931C16.0546 2.56943 18.9843 2.33994 20.8739 3.93173C23.369 6.03623 22.9979 9.49326 21.2303 11.295Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="details">
+                                        <span class="text">
+                                            <span class="price">
+                                                ₦ 100.00 &nbsp;
+                                            </span>
+                                            per night
+                                        </span>
+                                        <span class="book-now">
+                                            <img src="./images/book-now-button.svg" alt="Book now">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  Standard Room -->
+                        <div class="card-container" id="standard">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/standard-room.png" alt="Standard Room">
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <h1>
+                                            Standard Room
+                                        </h1>
+                                        <svg width="25" height="23" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.3827 2.13974C19.5604 -0.233305 15.2001 0.12314 12.4999 2.87216C9.79969 0.12314 5.43934 -0.238188 2.61707 2.13974C-1.0548 5.23056 -0.517694 10.2696 2.09949 12.9405L10.6639 21.6661C11.1522 22.1642 11.8065 22.4425 12.4999 22.4425C13.1981 22.4425 13.8475 22.169 14.3358 21.671L22.9003 12.9454C25.5126 10.2745 26.0595 5.23545 22.3827 2.13974ZM21.2303 11.295L12.6659 20.0206C12.5487 20.1378 12.4511 20.1378 12.3339 20.0206L3.76941 11.295C1.98719 9.47861 1.62586 6.04111 4.12586 3.93662C6.02527 2.33994 8.95496 2.57919 10.7909 4.44931L12.4999 6.19248L14.2089 4.44931C16.0546 2.56943 18.9843 2.33994 20.8739 3.93173C23.369 6.03623 22.9979 9.49326 21.2303 11.295Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="details">
+                                        <span class="text">
+                                            <span class="price">
+                                                ₦ 130.00 &nbsp;
+                                            </span>
+                                            per night
+                                        </span>
+                                        <span class="book-now">
+                                            <img src="./images/book-now-button.svg" alt="Book now">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mini ROOM -->
+                        <div class="card-container" id="mini">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/mini-room.png" alt="Mini Room">
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <h1>
+                                            Mini Room
+                                        </h1>
+                                        <svg width="25" height="23" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.3827 2.13974C19.5604 -0.233305 15.2001 0.12314 12.4999 2.87216C9.79969 0.12314 5.43934 -0.238188 2.61707 2.13974C-1.0548 5.23056 -0.517694 10.2696 2.09949 12.9405L10.6639 21.6661C11.1522 22.1642 11.8065 22.4425 12.4999 22.4425C13.1981 22.4425 13.8475 22.169 14.3358 21.671L22.9003 12.9454C25.5126 10.2745 26.0595 5.23545 22.3827 2.13974ZM21.2303 11.295L12.6659 20.0206C12.5487 20.1378 12.4511 20.1378 12.3339 20.0206L3.76941 11.295C1.98719 9.47861 1.62586 6.04111 4.12586 3.93662C6.02527 2.33994 8.95496 2.57919 10.7909 4.44931L12.4999 6.19248L14.2089 4.44931C16.0546 2.56943 18.9843 2.33994 20.8739 3.93173C23.369 6.03623 22.9979 9.49326 21.2303 11.295Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="details">
+                                        <span class="text">
+                                            <span class="price">
+                                                ₦ 95.00 &nbsp;
+                                            </span>
+                                            per night
+                                        </span>
+                                        <span class="book-now">
+                                            <img src="./images/book-now-button.svg" alt="Book now">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Belvin Room -->
+                        <div class="card-container" id="belvin">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/mini-room.png" alt="Belvin Room">
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <h1>
+                                            Belvin Room
+                                        </h1>
+                                        <svg width="25" height="23" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.3827 2.13974C19.5604 -0.233305 15.2001 0.12314 12.4999 2.87216C9.79969 0.12314 5.43934 -0.238188 2.61707 2.13974C-1.0548 5.23056 -0.517694 10.2696 2.09949 12.9405L10.6639 21.6661C11.1522 22.1642 11.8065 22.4425 12.4999 22.4425C13.1981 22.4425 13.8475 22.169 14.3358 21.671L22.9003 12.9454C25.5126 10.2745 26.0595 5.23545 22.3827 2.13974ZM21.2303 11.295L12.6659 20.0206C12.5487 20.1378 12.4511 20.1378 12.3339 20.0206L3.76941 11.295C1.98719 9.47861 1.62586 6.04111 4.12586 3.93662C6.02527 2.33994 8.95496 2.57919 10.7909 4.44931L12.4999 6.19248L14.2089 4.44931C16.0546 2.56943 18.9843 2.33994 20.8739 3.93173C23.369 6.03623 22.9979 9.49326 21.2303 11.295Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="details">
+                                        <span class="text">
+                                            <span class="price">
+                                                ₦ 95.00 &nbsp;
+                                            </span>
+                                            per night
+                                        </span>
+                                        <span class="book-now">
+                                            <img src="./images/book-now-button.svg" alt="Book now">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  Alvania -->
+                        <div class="card-container" id="alvania">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/standard-room.png" alt="Alvania Room">
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <h1>
+                                            Alvania Room
+                                        </h1>
+                                        <svg width="25" height="23" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.3827 2.13974C19.5604 -0.233305 15.2001 0.12314 12.4999 2.87216C9.79969 0.12314 5.43934 -0.238188 2.61707 2.13974C-1.0548 5.23056 -0.517694 10.2696 2.09949 12.9405L10.6639 21.6661C11.1522 22.1642 11.8065 22.4425 12.4999 22.4425C13.1981 22.4425 13.8475 22.169 14.3358 21.671L22.9003 12.9454C25.5126 10.2745 26.0595 5.23545 22.3827 2.13974ZM21.2303 11.295L12.6659 20.0206C12.5487 20.1378 12.4511 20.1378 12.3339 20.0206L3.76941 11.295C1.98719 9.47861 1.62586 6.04111 4.12586 3.93662C6.02527 2.33994 8.95496 2.57919 10.7909 4.44931L12.4999 6.19248L14.2089 4.44931C16.0546 2.56943 18.9843 2.33994 20.8739 3.93173C23.369 6.03623 22.9979 9.49326 21.2303 11.295Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="details">
+                                        <span class="text">
+                                            <span class="price">
+                                                ₦ 130.00 &nbsp;
+                                            </span>
+                                            per night
+                                        </span>
+                                        <span class="book-now">
+                                            <img src="./images/book-now-button.svg" alt="Book now">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
+        </main>
+        <!-- Start of Footer -->
+        <footer>
+            <section class="footer-wrapper">
+                <div class="top-contents">
+                    <div class="about-us">
+                        <a href="#">
+                            <img src="images/logo.svg" alt="footer-logo" />
+                        </a>
+    
+                        <h3>About Us</h3>
+    
+                        <p class="about-text">Crystal Hotel is an elegant and stylish hotel that suites all your needs. Our hotel has all you need for maximum comfort and relaxation. Crystal hotlel is the best place to enjoy your life and get the best value for your money. Our staff are polite and decent in their jobs. Give us a try and you will never regret it because we ensure ultimate cutomer satisfaction.</p>
+                    </div>
+    
+                    <div class="links-wrapper">
+                        <div class="quick-links">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">Facilities</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Rooms & Rates</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="flickers">
+                            <h3>Flickers</h3>
+                            <ul class="flikers-links">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Reviews</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">Privacy Policies</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- <div>
-                <p class="copyright">Copyright &copy;2020 Crystal Hotel All rights reserved</p>
-
-                <ul class="flickers-icons">
-                    <li></li>
-                </ul>
-            </div> -->
+                <div class="social-links">
+                    <p class="copyright">Copyright &copy;2020 Crystal Hotel All rights reserved</p>
+    
+                    <ul class="social-icons">
+                        <li><a href="#"><img src="./images/icons/facebook-icon.svg" /></a></li>
+                        <li><a href="#"><img src="./images/icons/twitter-icon.svg" /></a></li>
+                        <li><a href="#"><img src="./images/icons/instagram-icon.svg" /></a></li>
+                    </ul>
+                </div>
+            </section>
         </footer>
         <!-- End of Footer -->
 
         <script src="scripts/main.js"></script>
         <script src="scripts/rooms.js"></script>
     </body>
+
 </html>

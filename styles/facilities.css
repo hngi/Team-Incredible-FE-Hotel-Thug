@@ -14,12 +14,14 @@
    color: #f1efef;
 }
 
-h1 {
-   font-size: 2rem;
+#heading h1 {
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
 }
 
-h2 {
+#heading h2 {
    font-weight: normal;
+   font-size: 1.15rem;
 }
 
 .container {
@@ -34,9 +36,10 @@ h2 {
    margin: 4rem 0;
 }
 
-.facilities h3 {
+.facilities h2 {
    color: #8F503F;
    margin-bottom: 1rem;
+   font-weight: 600;
 }
 
 .facilities p {
@@ -52,9 +55,61 @@ h2 {
    padding-right: 2rem;
 }
 
+
+.restaurant,
+.golf-club{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.restaurant-img > img,
+.golf-club-img > img{
+   margin-right: 2rem;
+}
+
+
+
+.restaurant-content p,
+.golf-club-content p,
+.quality-spa-content p,
+.tennis-club-content p{
+   color: #8B8680;
+   margin-bottom: 0.5rem;
+}
+
+.restaurant-content h2,
+.golf-club-content h2,
+.quality-spa-content h2,
+.tennis-club-content h2{
+    color: #8F503F;
+    font-weight: 600;
+   margin-bottom: 1rem;
+}
+
+
+.quality-spa,
+.tennis-club{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality-spa-img > img,
+.tennis-club-img > img{
+   margin-left: 2rem;
+}
+
+.tennis-club{
+   margin-bottom: 6rem;
+}
+
 @media(max-width: 1185px) {
 
-   .facilities .image {
+   .facilities .image{
       flex: 0.55;
    }
 
@@ -74,7 +129,7 @@ h2 {
       flex: 0.6;
    }
 
-   .facilities .contentA, .facilities .contentB {
+   .facilities .contentA, .facilities .contentB, .restaurant-img {
       flex: 0.4;
    }
 
@@ -82,17 +137,39 @@ h2 {
 
 @media(max-width: 1000px) {
 
-   .facilities {
+   .facilities,
+   .restaurant,
+   .golf-club,
+   .quality-spa,
+   .tennis-club{
       display: grid;
       grid-template-columns: 1;
+   }
+   .restaurant,
+   .golf-club,
+   .quality-spa,
+   .tennis-club{
+      margin-top: 80px;
    }
 
    .facilities .image {
       order: -1;
    }
 
-   .facilities .image img {
+   .facilities .image img ,
+   .restaurant-img > img,
+   .quality-spa-img > img,
+   .tennis-club-img > img,
+   .golf-club-img > img {
       width: 100%;
+      margin: 0;
+   }
+   
+   .restaurant-content,
+   .golf-club-content,
+   .quality-spa-content,
+   .tennis-club-content {
+      padding-top: 2rem;
    }
 
    .facilities .contentA, .facilities .contentB {
