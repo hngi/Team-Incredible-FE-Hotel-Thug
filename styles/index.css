@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+.about-hotel {
+    background-color: #ffffff;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.about-h1 {
+    color: #8F503F;
+    position: absolute;
+    width: 300px;
+    left: 710px;
+    top: 165px;    
+}
+.about-img {
+    width: 600px;
+    height: 400px;
+    margin: 30px 0px 40px 0px;
+}
+.about-text {
+    width: 500px;
+    margin: 26px 0px 0px 0px
+}
+.about-paragraph {
+    color: #8B8680;
+    font-size: 16px;
+    line-height: 26px;
+}
+.about-btn {
+    background-color: #8F503F;
+    width: 160px;
+    height: 45px;
+    border: transparent;
+    margin-top: 25px;
+}
+.hospitality-img {
+    filter: brightness(50%);
+    height: 522px;
+}
+.hospitality-vector {
+    position: absolute;
+    left: 600px;
+    top:950px;
+}
+.hospitality > h5 {
+    font-size:26px;
+    color: #ffffff;
+    position: absolute;
+    width: 220px;
+    height: 27px;
+    left: 570px;
+    top: 780px;
+}
+.hospitality > p {
+    position: absolute;
+    width: 440px;
+    height: 67px;
+    text-align: center;
+    left: 450px;
+    top: 840px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1190px) {
+    .about-hotel{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        width: auto;
+    }
+    /* .about-img{
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .about-h1 {
+        left:60px;
+        width: auto
+    }
+    .about-text{
+        width: auto;
+    } */
+    .hospitality {
+        width: auto;
+        max-width: 100%;
+    }
+}
