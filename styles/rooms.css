@@ -105,10 +105,11 @@ section .card-container .card .content {
     display: block;
     height: 18px;
     margin-right: 0;
+    fill: #8F503F;
 }
 
 .content .title svg:hover {
-    fill: #8F503F;
+    fill: #444444;
 }
 
 .title h1 {
@@ -134,27 +135,7 @@ section .card-container .card .content {
     margin-right: 10px;
 }
 
-@media (min-width: 768px){
-    .container {
-        width: 750px;
-    }
-
-    section .card-container .card {
-        margin: 23px 18px;
-    }
-
-    .rooms-grid {
-        padding: 30px 50px;
-    }
-
-    .content .title {
-        padding: 10px;
-    }
-
-    .title h1 {
-        font-size: 24px;
-    }
-
+@media (min-width: 640px){
     section .card-container {
         width: 50%;
     }
@@ -162,6 +143,32 @@ section .card-container .card .content {
     section .cards {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .rooms-grid {
+        padding: 30px 10px;
+    }
+
+    section .card-container .card {
+        margin: 23px 10px;
+    }
+}
+
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+
+    section .card-container .card {
+        margin: 23px 15px;
+    }
+
+    .rooms-grid {
+        padding: 30px 20px;
+    }
+
+    .content .title {
+        padding: 10px;
     }
 
     .card .card-image img {
@@ -173,7 +180,6 @@ section .card-container .card .content {
 
     .content .details {
         padding: 10px;
-        font-size: 18px;
     }
 }
 
@@ -189,6 +195,20 @@ section .card-container .card .content {
     .card .card-image img {
         height: 387px;
     }
+
+    .title h1 {
+        font-size: 24px;
+    }
+
+    .rooms-grid {
+        padding: 30px 30px;
+    }
+
+    .content .details {
+        padding: 10px;
+        font-size: 18px;
+    }
+
 }
 
 @media (min-width: 1200px){
@@ -210,5 +230,8 @@ section .card-container .card .content {
 
     section .card-container .card .card-image img {
         width: 100%;
+    }
+    .rooms-grid {
+        padding: 30px 50px;
     }
 }
