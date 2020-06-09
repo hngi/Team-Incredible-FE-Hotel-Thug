@@ -5,7 +5,7 @@
 }
 
 #heading {
-   background: url('/images/facilities-banner.png');
+   background: url('../images/facilities-banner.png');
    height: 345px;
    display: flex;
    justify-content: center;
