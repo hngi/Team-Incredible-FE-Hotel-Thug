@@ -52,9 +52,58 @@ h2 {
    padding-right: 2rem;
 }
 
+
+.restaurant,
+.golf-club{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.restaurant-img > img,
+.golf-club-img > img{
+   margin-right: 2rem;
+}
+
+.restaurant-content p,
+.golf-club-content p,
+.quality-spa-content p,
+.tennis-club-content p{
+    font-size: 16px;
+    color: #8B8680;
+}
+
+.restaurant-content h2,
+.golf-club-content h2,
+.quality-spa-content h2,
+.tennis-club-content h2{
+    color: #8F503F;
+    font-weight: 600;
+}
+
+
+.quality-spa,
+.tennis-club{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality-spa-img > img,
+.tennis-club-img > img{
+   margin-left: 2rem;
+}
+
+.tennis-club{
+   margin-bottom: 6rem;
+}
+
 @media(max-width: 1185px) {
 
-   .facilities .image {
+   .facilities .image{
       flex: 0.55;
    }
 
@@ -66,6 +115,14 @@ h2 {
       flex: 0.45;
    }
 
+   .restaurant-img > img,
+   .golf-club-img > img,
+   .quality-spa-img > img,
+   .tennis-club-img > img{
+      width: 500px;
+      height: 300px;
+   }
+
 }
 
 @media(max-width: 1140px) {
@@ -74,7 +131,7 @@ h2 {
       flex: 0.6;
    }
 
-   .facilities .contentA, .facilities .contentB {
+   .facilities .contentA, .facilities .contentB, .restaurant-img {
       flex: 0.4;
    }
 
@@ -82,17 +139,38 @@ h2 {
 
 @media(max-width: 1000px) {
 
-   .facilities {
+   .facilities,
+   .restaurant,
+   .golf-club,
+   .quality-spa,
+   .tennis-club{
       display: grid;
       grid-template-columns: 1;
+   }
+   .restaurant,
+   .golf-club,
+   .quality-spa,
+   .tennis-club{
+      margin-top: 80px;
    }
 
    .facilities .image {
       order: -1;
    }
 
-   .facilities .image img {
+   .facilities .image img ,
+   .restaurant-img > img,
+   .quality-spa-img > img,
+   .tennis-club-img > img,
+   .golf-club-img > img {
       width: 100%;
+   }
+   
+   .restaurant-img > img,
+   .quality-spa-img > img,
+   .tennis-club-img > img,
+   .golf-club-img > img{
+      margin: 20px 0;
    }
 
    .facilities .contentA, .facilities .contentB {
