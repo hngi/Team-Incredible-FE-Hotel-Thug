@@ -90,6 +90,7 @@ section .card-container .card .content {
 
 .card .card-image img {
     height: 215px;
+    object-fit: cover;
 }
 
 .content .title {
