@@ -34,3 +34,5 @@
     grid-template-columns: repeat(3, auto);
    	grid-row-gap: 0;
 }
+
+.img-badge {height:13px;width:13px;padding:0}
