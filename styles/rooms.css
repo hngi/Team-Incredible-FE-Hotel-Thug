@@ -1,0 +1,214 @@
+*, ::after, ::before {
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    background-color: #fafafa;
+}
+
+main .jumbotron {
+    height: 345px;
+    left: 0px;
+    background-image: url('../images/rooms.png');
+    text-align: center;
+    padding: 0;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+main h1 {
+    font-weight: 500;
+}
+
+main section {
+    padding-bottom: 200px;
+}
+
+main .overlay {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(38, 18, 20, 0.6);
+}
+
+.jumbotron h1 {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin: 20px;
+}
+
+.jumbotron h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 30px;
+}
+
+section .cards {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+section .card-container {
+    display: flex;
+    justify-content: center;
+}
+
+section .card-container .card {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(38,18,20,0.12), 0 1px 2px rgba(38,18,20,0.24);
+    margin: 16px 0;
+}
+
+section .card-container .card .content {
+    padding: 16px;
+    background-color: #ffffff;
+    color: #8F503F;
+}
+
+.rooms-grid {
+    padding: 30px 32px;
+}
+
+.card .card-image img {
+    height: 215px;
+}
+
+.content .title {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 36px;
+    line-height: 100%;
+}
+
+.content .title svg {
+    display: block;
+    height: 18px;
+    margin-right: 0;
+}
+
+.content .title svg:hover {
+    fill: #8F503F;
+}
+
+.title h1 {
+    font-size: 15px;
+}
+
+.content .details {
+    margin-top: 3px;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #8B8680;
+    font-size: 14px;
+    line-height: 27px;
+    line-height: 100%;
+    font-weight: 300;
+}
+
+.content .details .price {
+    color: #8F503F;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+
+    section .card-container .card {
+        margin: 23px 18px;
+    }
+
+    .rooms-grid {
+        padding: 30px 50px;
+    }
+
+    .content .title {
+        padding: 10px;
+    }
+
+    .title h1 {
+        font-size: 24px;
+    }
+
+    section .card-container {
+        width: 50%;
+    }
+
+    section .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card .card-image img {
+        height: 280px;
+    }
+    .content .title img {
+        margin-right: 0;
+    }
+
+    .content .details {
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 940px){
+    .container {
+        width: 900px;
+    }
+
+    .content .title svg {
+        margin-right: 12px;
+    }
+
+    .card .card-image img {
+        height: 387px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 1200px;
+    }
+
+    section .card-container .card {
+        width: 100%;
+    }
+
+    section .card-container .card .card-image {
+        width: 100%;
+    }
+
+    .content .title svg {
+        height: 22px;
+    }
+
+    section .card-container .card .card-image img {
+        width: 100%;
+    }
+}
