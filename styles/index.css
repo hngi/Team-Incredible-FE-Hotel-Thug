@@ -19,15 +19,10 @@ body {
 /* Slideshow container */
 .slideshow-container {
   width: 100%;
+  min-height: 20rem;
   height: 60%;
   max-height: 778px;
   position: relative;
-  /* margin: auto; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* z-index: -2; */
-  /* ali */
 }
 
 .slideshow-container::before {
@@ -92,35 +87,6 @@ body {
   display: none;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.5s ease-in-out;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -133,14 +99,14 @@ body {
 }
 
 /* The dots/bullets/indicators */
-.dots {
+.topDots {
   position: absolute;
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.dot {
+.topDot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -153,16 +119,16 @@ body {
 }
 
 .active,
-.dot:hover {
+.topDot:hover {
   background-color: #8f503f;
 }
 
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.02s;
   animation-name: fade;
-  animation-duration: 0.5s;
+  animation-duration: 0.02s;
 }
 
 @-webkit-keyframes fade {

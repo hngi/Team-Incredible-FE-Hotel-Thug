@@ -1,55 +1,54 @@
 let slideIndex = 0;
-let slides = document.getElementsByClassName('mySlides');
-let dots = document.getElementsByClassName('dot');
-showSlides(slideIndex);
+let topSlides = document.getElementsByClassName('topSlides');
+let topDots = document.getElementsByClassName('topDot');
+showTopSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides((slideIndex += n));
+  showTopSlides((slideIndex += n));
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides((slideIndex = n));
+  showTopSlides((slideIndex = n));
 }
 
-function showSlides(n) {
+function showTopSlides(n) {
   let i;
-  // console.log(dots.length);
-  if (n > slides.length) {
+  if (n > topSlides.length) {
     slideIndex = 1;
   }
   if (n < 1) {
-    slideIndex = slides.length;
+    slideIndex = topSlides.length;
   }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
+  for (i = 0; i < topSlides.length; i++) {
+    topSlides[i].style.display = 'none';
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(' active', '');
+  for (i = 0; i < topDots.length; i++) {
+    topDots[i].className = topDots[i].className.replace(' active', '');
   }
-  slides[slideIndex - 1].style.display = 'block';
-  dots[slideIndex - 1].className += ' active';
+  topSlides[slideIndex - 1].style.display = 'block';
+  topDots[slideIndex - 1].className += ' active';
 }
 
 // let slideIndex = 0;
 // showSlides();
 
-function startSlides() {
+function startTopSlides() {
   var i;
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
+  for (i = 0; i < topSlides.length; i++) {
+    topSlides[i].style.display = 'none';
   }
   slideIndex++;
-  if (slideIndex > slides.length) {
+  if (slideIndex > topSlides.length) {
     slideIndex = 1;
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(' active', '');
+  for (i = 0; i < topDots.length; i++) {
+    topDots[i].className = topDots[i].className.replace(' active', '');
   }
-  slides[slideIndex - 1].style.display = 'block';
-  dots[slideIndex - 1].className += ' active';
-  setTimeout(startSlides, 3000); // Change image every 2 seconds
+  topSlides[slideIndex - 1].style.display = 'block';
+  topDots[slideIndex - 1].className += ' active';
+  setTimeout(startTopSlides, 3000); // Change image every 3 seconds
 }
 
-startSlides();
+startTopSlides();
