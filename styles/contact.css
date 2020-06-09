@@ -163,3 +163,13 @@ form button {
   /* margin: 0.5rem 1rem; */
   padding: 0.5rem;
 }
+
+@media screen and (max-width: 770px) {
+  .main div.contact-details {
+    flex-direction: column;
+  }
+  form input,
+  form textarea {
+    padding: 1rem 1.5rem;
+  }
+}
