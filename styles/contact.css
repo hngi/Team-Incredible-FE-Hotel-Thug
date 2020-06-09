@@ -30,21 +30,22 @@ body {
 
 .main > section.heading {
   position: relative;
-  background: #26121455;
-  height: max-content;
+  background: #26121460;
+  height: 345px;
   margin-bottom: 2rem;
   padding: 6rem;
 }
 
 .main > section.heading > * {
   color: white;
+  /* z-index: 1; */
 }
 
 .main section.heading::before {
   content: '';
   position: absolute;
   background: url('../images/heading-bg.jpg');
-  background-size: 100% contain;
+  background-size: contain 345px;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
@@ -171,5 +172,13 @@ form button {
   form input,
   form textarea {
     padding: 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  section.heading > p, div.address p {
+    min-width: 80%;
+    width: max-content;
+    max-width: 240px;
   }
 }
