@@ -172,7 +172,4 @@ form button {
   form textarea {
     padding: 1rem 1.5rem;
   }
-  button {
-    display: flex;
-  }
 }
