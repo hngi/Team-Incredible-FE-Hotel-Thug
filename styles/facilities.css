@@ -1,0 +1,103 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+#heading {
+   background: url('../images/facilities-banner.png');
+   height: 345px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: #f1efef;
+}
+
+h1 {
+   font-size: 2rem;
+}
+
+h2 {
+   font-weight: normal;
+}
+
+.container {
+   width: 85%;
+   margin: auto;
+}
+
+.facilities {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 4rem 0;
+}
+
+.facilities h3 {
+   color: #8F503F;
+   margin-bottom: 1rem;
+}
+
+.facilities p {
+   margin-bottom: 0.5rem;
+   color: #8B8680;
+}
+
+.facilities .contentA {
+   padding-left: 2rem;
+}
+
+.facilities .contentB {
+   padding-right: 2rem;
+}
+
+@media(max-width: 1185px) {
+
+   .facilities .image {
+      flex: 0.55;
+   }
+
+   .facilities .image img {
+      width: 100%;
+   }
+
+   .facilities .contentA, .facilities .contentB {
+      flex: 0.45;
+   }
+
+}
+
+@media(max-width: 1140px) {
+
+   .facilities .image {
+      flex: 0.6;
+   }
+
+   .facilities .contentA, .facilities .contentB {
+      flex: 0.4;
+   }
+
+}
+
+@media(max-width: 1000px) {
+
+   .facilities {
+      display: grid;
+      grid-template-columns: 1;
+   }
+
+   .facilities .image {
+      order: -1;
+   }
+
+   .facilities .image img {
+      width: 100%;
+   }
+
+   .facilities .contentA, .facilities .contentB {
+      padding: 2rem 0;
+   }
+
+}
+
