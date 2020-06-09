@@ -1,0 +1,180 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+#heading {
+   background: url('../images/facilities-banner.png');
+   height: 345px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: #f1efef;
+}
+
+#heading h1 {
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+}
+
+#heading h2 {
+   font-weight: normal;
+   font-size: 1.15rem;
+}
+
+.container {
+   width: 85%;
+   margin: auto;
+}
+
+.facilities {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 4rem 0;
+}
+
+.facilities h2 {
+   color: #8F503F;
+   margin-bottom: 1rem;
+   font-weight: 600;
+}
+
+.facilities p {
+   margin-bottom: 0.5rem;
+   color: #8B8680;
+}
+
+.facilities .contentA {
+   padding-left: 2rem;
+}
+
+.facilities .contentB {
+   padding-right: 2rem;
+}
+
+
+.restaurant,
+.golf-club{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.restaurant-img > img,
+.golf-club-img > img{
+   margin-right: 2rem;
+}
+
+
+
+.restaurant-content p,
+.golf-club-content p,
+.quality-spa-content p,
+.tennis-club-content p{
+   color: #8B8680;
+   margin-bottom: 0.5rem;
+}
+
+.restaurant-content h2,
+.golf-club-content h2,
+.quality-spa-content h2,
+.tennis-club-content h2{
+    color: #8F503F;
+    font-weight: 600;
+   margin-bottom: 1rem;
+}
+
+
+.quality-spa,
+.tennis-club{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality-spa-img > img,
+.tennis-club-img > img{
+   margin-left: 2rem;
+}
+
+.tennis-club{
+   margin-bottom: 6rem;
+}
+
+@media(max-width: 1185px) {
+
+   .facilities .image{
+      flex: 0.55;
+   }
+
+   .facilities .image img {
+      width: 100%;
+   }
+
+   .facilities .contentA, .facilities .contentB {
+      flex: 0.45;
+   }
+
+}
+
+@media(max-width: 1140px) {
+
+   .facilities .image {
+      flex: 0.6;
+   }
+
+   .facilities .contentA, .facilities .contentB, .restaurant-img {
+      flex: 0.4;
+   }
+
+}
+
+@media(max-width: 1000px) {
+
+   .facilities,
+   .restaurant,
+   .golf-club,
+   .quality-spa,
+   .tennis-club{
+      display: grid;
+      grid-template-columns: 1;
+   }
+   .restaurant,
+   .golf-club,
+   .quality-spa,
+   .tennis-club{
+      margin-top: 80px;
+   }
+
+   .facilities .image {
+      order: -1;
+   }
+
+   .facilities .image img ,
+   .restaurant-img > img,
+   .quality-spa-img > img,
+   .tennis-club-img > img,
+   .golf-club-img > img {
+      width: 100%;
+      margin: 0;
+   }
+   
+   .restaurant-content,
+   .golf-club-content,
+   .quality-spa-content,
+   .tennis-club-content {
+      padding-top: 2rem;
+   }
+
+   .facilities .contentA, .facilities .contentB {
+      padding: 2rem 0;
+   }
+
+}
+
