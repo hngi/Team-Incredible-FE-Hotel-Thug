@@ -488,6 +488,11 @@ ul.icons li {
         font-size: 12px;
     }
 }
+@media (max-width: 1024px) {
+    .img-holder img {
+        width: 525px !important;
+    }
+}
   /* RESPONSIVENESS END */
 
 
