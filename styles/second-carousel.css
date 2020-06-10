@@ -1,0 +1,94 @@
+body{
+  margin: 0;
+  font-family: "Poppins", "lato", "arial";
+}
+.banner {
+  height: 500px;
+  background: url('../images/clean-pool.png');
+  background-position: center;
+  background-size: cover;
+}
+.subBanner{
+  height: 500px;
+  background: rgba(0, 0, 0, .7);
+  position: relative;
+}
+.img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 30px
+}
+.slider{
+  /* margin: 0px auto; */
+  position: relative;
+  overflow: hidden;
+}
+.slider .slider-items .item{
+  display: none;
+  position: relative
+}
+.slider .slider-items .item.active{
+  display: block;
+}
+.banner .subBanner .slider .slider-items .item .caption{
+  position: absolute;
+  width: 70%;
+  animation: zoom 1s linear;
+  text-align: center;
+  color: #fff;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  bottom: 0;
+
+}
+@keyframes zoom{
+  50%{opacity: 0}
+  100%{opacity: 1}
+
+}
+.caption{
+  text-align: center;
+  margin: 0 auto;
+}
+.slider .left-slide, .slider .right-slide{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  top: 50px;
+  margin-top: -20px;
+  cursor: pointer;
+  background-color: grey;
+  border-radius: 50%;
+
+  transition: all .5s ease;
+}
+.slider .left-slide:hover, .slider .right-slide:hover{
+  background-color: red;
+  border-radius: 50%;
+}
+.slider .left-slide{
+  left: 30px;
+  top: 50%
+}
+.slider .right-slide{
+  right: 30px;
+  top: 50%
+}
+.box{
+  height: 500px; 
+  line-height: 400px;
+  word-wrap: break-word;
+}
+.head{
+  font-weight: bold;
+}
+
+.paragraph{
+  font-size: 20px;
+  margin-top: 30px;
+}
