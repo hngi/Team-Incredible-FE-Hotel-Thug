@@ -1,362 +1,444 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Crystal Hotel</title>
-        <link href="styles/header&footer.css" rel="stylesheet" />
-        <link href="styles/index.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Start of Desktop Navigation -->
-        <header>
-            <section class="navigation-wrapper">
-                <nav class="desktop-nav">
-                   <a href="#">
-                       <img src="images/logo.svg" alt="nav-logo" />
-                   </a> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crystal Hotel</title>
+    <link href="styles/header&footer.css" rel="stylesheet" />
+    <link href="styles/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Start of Desktop Navigation -->
+    <header>
+      <section class="navigation-wrapper">
+        <nav class="desktop-nav">
+          <a href="#">
+            <img src="images/logo.svg" alt="nav-logo" />
+          </a>
 
-                   <ul>
-                       <li><a href="./index.html">Home <span class="active"></span></a></li>
-                       <li><a href="./rooms.html">Rooms <span></span></a></li>
-                       <li><a href="./facilities.html">Facilities <span></span></a></li>
-                       <li><a href="./contact.html">Contact <span></span></a></li>
-                   </ul>
+          <ul>
+            <li>
+              <a href="./index.html">Home <span class="active"></span></a>
+            </li>
+            <li>
+              <a href="./rooms.html">Rooms <span></span></a>
+            </li>
+            <li>
+              <a href="./facilities.html">Facilities <span></span></a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact <span></span></a>
+            </li>
+          </ul>
 
-                   <svg data-modal-target="#mobile-nav" id="open-nav" width="35" height="31" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 22.1429H35V17.7143H0V22.1429ZM0 31H35V26.5714H0V31ZM0 13.2857H35V8.85714H0V13.2857ZM0 0V4.42857H35V0H0Z" fill="white" fill-opacity="0.87"/>
-                    </svg>                                        
-                </nav>
-            </section>
-        </header>
-        <!-- End of Desktop Navigation -->
+          <svg
+            data-modal-target="#mobile-nav"
+            id="open-nav"
+            width="35"
+            height="31"
+            viewBox="0 0 35 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 22.1429H35V17.7143H0V22.1429ZM0 31H35V26.5714H0V31ZM0 13.2857H35V8.85714H0V13.2857ZM0 0V4.42857H35V0H0Z"
+              fill="white"
+              fill-opacity="0.87"
+            />
+          </svg>
+        </nav>
+      </section>
+    </header>
+    <!-- End of Desktop Navigation -->
 
-        <!-- Start of Mobile Navigation -->
-        <section class="mobile-nav-wrapper modal" id="mobile-nav">
-            <button data-close-button>&times;</button>
-            <nav class="mobile-nav">
-                <ul class="mobile-nav-links">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./index.html">Rooms</a></li>
-                    <li><a href="./facilities.html">Facilities</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Start of Mobile Navigation -->
+    <section class="mobile-nav-wrapper modal" id="mobile-nav">
+      <button data-close-button>&times;</button>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html">Rooms</a></li>
+          <li><a href="./facilities.html">Facilities</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+    <!-- End of Mobile Nivagation -->
+
+    <div class="container">
+      <!-- Start of Top Carousel/SlideShow-->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="topSlides fade">
+          <img src="images/homepage-image-1.png" style="width: 100%;" />
+        </div>
+        <div class="topSlides fade">
+          <img src="images/homepage-image-2.png" style="width: 100%;" />
+        </div>
+        <div class="topSlides fade">
+          <img src="images/homepage-image-3.png" style="width: 100%;" />
+        </div>
+        <section class="heading">
+          <p>Welcome to</p>
+          <h1>Crystal Hotel</h1>
+          <p>The place to enjoy life and flex...</p>
+          <a href="#top-rated" class="btn">Explore</a>
         </section>
-        <!-- End of Mobile Nivagation -->
-      
-        <!-- Slides Page -->
-        <div id="slideshow-example" data-component="slideshow">
-            <div class="text-caption">
-                <h2>Welcome to</h2>
-                <h1>Crytal Hotel</h1>
-                <h3>The place to enjoy life and flex...</h3>
-                <a href="#" class="btn">Explore</a>
-            </div>
-            <div role="list">
-                <div class="slide">
-                    <img src="./images/slide7.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./images/slide01.png" alt="firstslide">
-                </div>
-                <div class="slide">
-                    <img src="./images/slide2.png" alt="secondslide">
-                </div>
-                <div class="slide">
-                    <img src="./images/slide03.png" alt="thirdslide">
-                </div>
-                <div class="slide">
-                    <img src="./images/slide6.png" alt="fourthslide">
-                </div>
-                
-            </div>
-            <div class="button-container">
-                <a href="#slider-image-1" class="slider-button"></a>
-                <a href="#slider-image-2" class="slider-button"></a>
-                <a href="#slider-image-4" class="slider-button"></a>
-             </div>
+        <!-- The dots -->
+        <div class="topDots" style="text-align: center;">
+          <span class="topDot" onclick="currentSlide(1)"></span>
+          <span class="topDot" onclick="currentSlide(2)"></span>
+          <span class="topDot" onclick="currentSlide(3)"></span>
         </div>
-    
-        <!-- Slides Page End -->
+      </div>
+    </div>
+    <!--End of Top Carousel/SlideShow -->
 
-          <!-- Top Rated Rooms Section  -->
-    <section class="container-fe ">
-        <div class="room-container">
-            <div class="rate-holder">
-                <h2>Top Rated Rooms</h2>
-                <h3>Explore our elegant and sophisticated top rated rooms</h3>
-            </div>
-
-            <div class="grid-style">
-                <div class="room-imgs">
-                    <div class="img-holder">
-                        <img src="./images/ExecRoom.png">
-                    </div>
-                </div>
-
-                <div class="room-contents">
-                    <div class="room-contentInner">
-                        <div class="cont-holder">
-                            <div class="exec-roomTxt">
-                                <h2>Executive Room</h2>
-                            </div>
-
-                            <div class="ratings">
-                                <h3>4.5</h3>
-                                <div class="ratin-icons">
-                                    <img src="./images/star-rating-filled.svg">
-                                    <img src="./images/star-rating-filled.svg">
-                                    <img src="./images/star-rating-filled.svg">
-                                    <img src="./images/star-rating-filled.svg">
-                                    <img src="./images/star-rating-half.svg">
-                                </div>
-                            </div>
-
-                            <div class="exec-paragraph">
-                                <p> Our Executive room is the room for you if you love elegance and simplicity.
-                                    It has all the beauty to give you a good sense of home and satisfaction.
-                                    This room is all you need to feel like a king and a queen.
-                                    We got you covered with lots of free items for this room.</p>
-                            </div>
-                        </div>
-
-                        <div class="ui-container">
-                            <ul class="icons">
-                                <li><a href="#" class="icon wifi"><img src="./images/wifi.png"></a></li>
-                                <li><a href="#" class="icon fork fork"><img src="./images/fork.png"></a></li>
-                                <li><a href="#" class="icon bottle"><img src="./images/bottle.png"></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="grid-container">
-                            <di class="amount">
-                                <h2>#150.000 <span>/ night</span></h2>
-                            </di>
-
-                            <div class="book-room">
-                                <button type="button" onclick="alert('Thank you for booking a room.')">Book
-                                    Room</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Top Rated Rooms Section  -->
+    <section class="container-fe">
+      <div class="room-container">
+        <div class="rate-holder">
+          <h2 id="top-rated">Top Rated Rooms</h2>
+          <h3>Explore our elegant and sophisticated top rated rooms</h3>
         </div>
+
+        <div class="grid-style">
+          <div class="room-imgs">
+            <div class="img-holder">
+              <img src="./images/ExecRoom.png" />
+            </div>
+          </div>
+
+          <div class="room-contents">
+            <div class="room-contentInner">
+              <div class="cont-holder">
+                <div class="exec-roomTxt">
+                  <h2>Executive Room</h2>
+                </div>
+
+                <div class="ratings">
+                  <h3>4.5</h3>
+                  <div class="ratin-icons">
+                    <img src="./images/star-rating-filled.svg" />
+                    <img src="./images/star-rating-filled.svg" />
+                    <img src="./images/star-rating-filled.svg" />
+                    <img src="./images/star-rating-filled.svg" />
+                    <img src="./images/star-rating-half.svg" />
+                  </div>
+                </div>
+
+                <div class="exec-paragraph">
+                  <p>
+                    Our Executive room is the room for you if you love elegance
+                    and simplicity. It has all the beauty to give you a good
+                    sense of home and satisfaction. This room is all you need to
+                    feel like a king and a queen. We got you covered with lots
+                    of free items for this room.
+                  </p>
+                </div>
+              </div>
+
+              <div class="ui-container">
+                <ul class="icons">
+                  <li>
+                    <a href="#" class="icon wifi"
+                      ><img src="./images/wifi.png"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icon fork fork"
+                      ><img src="./images/fork.png"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icon bottle"
+                      ><img src="./images/bottle.png"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="grid-container">
+                <di class="amount">
+                  <h2>#150.000 <span>/ night</span></h2>
+                </di>
+
+                <div class="book-room">
+                  <button
+                    type="button"
+                    onclick="alert('Thank you for booking a room.')"
+                  >
+                    Book Room
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="container-fe ">
-        <div class="room-container">
-
-            <div class="grid-style">
-
-                <div class="room-contents">
-
-                    <div class="cont-holder sm-screen">
-
-                        <div class="exec-roomTxt">
-                            <h2>Honeymoon Room</h2>
-                        </div>
-
-                        <div class="ratings">
-                            <h3>4.5</h3>
-                            <div class="ratin-icons">
-                                <img src="./images/star-rating-filled.svg">
-                                <img src="./images/star-rating-filled.svg">
-                                <img src="./images/star-rating-filled.svg">
-                                <img src="./images/star-rating-filled.svg">
-                                <img src="./images/star-rating-half.svg">
-                            </div>
-                        </div>
-
-                        <div class="exec-paragraph">
-                            <p> Our Honeymoon room is the room for you if you love elegance and simplicity.
-                                It has all the beauty to give you a good sense of home and satisfaction.
-                                This room is all you need to feel like a king and a queen.
-                                We got you covered with lots of free items for this room.</p>
-                        </div>
-                    </div>
-
-                    <div class="ui-container">
-                        <ul class="icons">
-                            <li><a href="#" class="icon wifi"><img src="./images/wifi.png"></a></li>
-                            <li><a href="#" class="icon fork fork"><img src="./images/fork.png"></a></li>
-                            <li><a href="#" class="icon bottle"><img src="./images/bottle.png"></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="grid-container sm-edit">
-                        <di class="amount">
-                            <h2>#100.000 <span>/ night</span></h2>
-                        </di>
-
-                        <div class="book-room">
-                            <button type="button" onclick="alert('Thank you for booking a room.')">Book Room</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="room-imgs sm-img">
-                    <div class="img-holder">
-                        <img src="./images/Honeymoon.png">
-                    </div>
-                </div>
+    <section class="container-fe">
+      <div class="room-container">
+        <div class="grid-style">
+          <div class="room-imgs">
+            <div class="img-holder">
+              <img src="./images/Honeymoon.png" />
             </div>
+          </div>
+
+          <div class="room-contents">
+            <div class="cont-holder">
+              <div class="exec-roomTxt">
+                <h2>Honeymoon Room</h2>
+              </div>
+
+              <div class="ratings">
+                <h3>4.5</h3>
+                <div class="ratin-icons">
+                  <img src="./images/star-rating-filled.svg" />
+                  <img src="./images/star-rating-filled.svg" />
+                  <img src="./images/star-rating-filled.svg" />
+                  <img src="./images/star-rating-filled.svg" />
+                  <img src="./images/star-rating-half.svg" />
+                </div>
+              </div>
+
+              <div class="exec-paragraph">
+                <p>
+                  Our Honeymoon room is the room for you if you love elegance
+                  and simplicity. It has all the beauty to give you a good sense
+                  of home and satisfaction. This room is all you need to feel
+                  like a king and a queen. We got you covered with lots of free
+                  items for this room.
+                </p>
+              </div>
+            </div>
+
+            <div class="ui-container">
+              <ul class="icons">
+                <li>
+                  <a href="#" class="icon wifi"
+                    ><img src="./images/wifi.png"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" class="icon fork fork"
+                    ><img src="./images/fork.png"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" class="icon bottle"
+                    ><img src="./images/bottle.png"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="grid-container sm-edit">
+              <di class="amount">
+                <h2>#100.000 <span>/ night</span></h2>
+              </di>
+
+              <div class="book-room">
+                <button
+                  type="button"
+                  onclick="alert('Thank you for booking a room.')"
+                >
+                  Book Room
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section class="container-fe ">
-        <div class="room-container">
-
-            <div class="grid-style">
-                <div class="room-imgs">
-                    <div class="img-holder">
-                        <img src="./images/Deluxe.png">
-                    </div>
-                </div>
-
-                <div class="room-contents">
-                    <div class="room-contentInner">
-                        <div class="cont-holder">
-
-                            <div class="exec-roomTxt">
-                                <h2>Deluxe Room</h2>
-                            </div>
-
-                            <div class="ratings">
-                                <h3>4.5</h3>
-                                <div class="ratin-icons">
-                                    <img src="./images/star-rating-filled.svg">
-                                    <img src="./images/star-rating-filled.svg">
-                                    <img src="./images/star-rating-filled.svg">
-                                    <img src="./images/star-rating-filled.svg">
-                                    <img src="./images/star-rating-half.svg">
-                                </div>
-                            </div>
-
-                            <div class="exec-paragraph">
-                                <p> Our Deluxe room is the room for you if you love elegance and simplicity.
-                                    It has all the beauty to give you a good sense of home and satisfaction.
-                                    This room is all you need to feel like a king and a queen.
-                                    We got you covered with lots of free items for this room.</p>
-                            </div>
-                        </div>
-
-                        <div class="ui-container">
-                            <ul class="icons">
-                                <li><a href="#" class="icon wifi"><img src="./images/wifi.png"></a></li>
-                                <li><a href="#" class="icon fork fork"><img src="./images/fork.png"></a></li>
-                                <li><a href="#" class="icon bottle"><img src="./images/bottle.png"></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="grid-container">
-                            <di class="amount">
-                                <h2>#95.000 <span>/ night</span></h2>
-                            </di>
-
-                            <div class="book-room">
-                                <button type="button" onclick="alert('Thank you for booking a room.')">Book
-                                    Room</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="container-fe">
+      <div class="room-container">
+        <div class="grid-style">
+          <div class="room-imgs">
+            <div class="img-holder">
+              <img src="./images/Deluxe.png" />
             </div>
+          </div>
+
+          <div class="room-contents">
+            <div class="room-contentInner">
+              <div class="cont-holder">
+                <div class="exec-roomTxt">
+                  <h2>Deluxe Room</h2>
+                </div>
+
+                <div class="ratings">
+                  <h3>4.5</h3>
+                  <div class="ratin-icons">
+                    <img src="./images/star-rating-filled.svg" />
+                    <img src="./images/star-rating-filled.svg" />
+                    <img src="./images/star-rating-filled.svg" />
+                    <img src="./images/star-rating-filled.svg" />
+                    <img src="./images/star-rating-half.svg" />
+                  </div>
+                </div>
+
+                <div class="exec-paragraph">
+                  <p>
+                    Our Deluxe room is the room for you if you love elegance and
+                    simplicity. It has all the beauty to give you a good sense
+                    of home and satisfaction. This room is all you need to feel
+                    like a king and a queen. We got you covered with lots of
+                    free items for this room.
+                  </p>
+                </div>
+              </div>
+
+              <div class="ui-container">
+                <ul class="icons">
+                  <li>
+                    <a href="#" class="icon wifi"
+                      ><img src="./images/wifi.png"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icon fork fork"
+                      ><img src="./images/fork.png"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icon bottle"
+                      ><img src="./images/bottle.png"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="grid-container">
+                <di class="amount">
+                  <h2>#95.000 <span>/ night</span></h2>
+                </di>
+
+                <div class="book-room">
+                  <button
+                    type="button"
+                    onclick="alert('Thank you for booking a room.')"
+                  >
+                    Book Room
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Top Rated Rooms Section End -->
 
-        <!-- Start of Gallery -->
-        <div class="gallery_wrap">
-            <h4 class="gallery_title">Our Gallery</h4>
-            <p class="gallery_text">
-                Feed your eyes with our amazing<br > pictures of this beautiful hotel
+    <!-- Start of Gallery -->
+    <div class="gallery_wrap">
+      <h4 class="gallery_title">Our Gallery</h4>
+      <p class="gallery_text">
+        Feed your eyes with our amazing<br />
+        pictures of this beautiful hotel
+      </p>
+      <div class="gallery_imgs anime">
+        <img class="gal_img" src="/images/room.png" alt="" />
+        <img class="gal_img" src="/images/restaurant.png" alt="" />
+        <img class="gal_img" src="/images/room_fan.png" alt="" />
+        <img class="gal_img" src="/images/food.png" alt="" />
+        <img class="gal_img" src="/images/room_blue.png" alt="" />
+        <img class="gal_img" src="/images/bar.png" alt="" />
+      </div>
+      <div class="gallery_imgs anime">
+        <img class="gal_img" src="/images/room_fan.png" alt="" />
+        <img class="gal_img" src="/images/room.png" alt="" />
+        <img class="gal_img" src="/images/restaurant.png" alt="" />
+        <img class="gal_img" src="/images/room_blue.png" alt="" />
+        <img class="gal_img" src="/images/food.png" alt="" />
+        <img class="gal_img" src="/images/bar.png" alt="" />
+      </div>
+      <div class="gallery_imgs anime">
+        <img class="gal_img" src="/images/food.png" alt="" />
+        <img class="gal_img" src="/images/room.png" alt="" />
+        <img class="gal_img" src="/images/room_fan.png" alt="" />
+        <img class="gal_img" src="/images/restaurant.png" alt="" />
+        <img class="gal_img" src="/images/bar.png" alt="" />
+        <img class="gal_img" src="/images/room_blue.png" alt="" />
+      </div>
+      <div class="ind">
+        <i class="ind_item"></i>
+        <i class="ind_item"></i>
+        <i class="ind_item"></i>
+      </div>
+    </div>
+    <!-- End of Gallery -->
+
+    <!-- Start of Footer -->
+    <footer>
+      <section class="footer-wrapper">
+        <div class="top-contents">
+          <div class="about-us">
+            <a href="#">
+              <img src="images/logo.svg" alt="footer-logo" />
+            </a>
+
+            <h3>About Us</h3>
+
+            <p class="about-text">
+              Crystal Hotel is an elegant and stylish hotel that suites all your
+              needs. Our hotel has all you need for maximum comfort and
+              relaxation. Crystal hotlel is the best place to enjoy your life
+              and get the best value for your money. Our staff are polite and
+              decent in their jobs. Give us a try and you will never regret it
+              because we ensure ultimate cutomer satisfaction.
             </p>
-            <div class="gallery_imgs anime">
-                <img class="gal_img" src="/images/room.png" alt="">
-                <img class="gal_img" src="/images/restaurant.png" alt="">
-                <img class="gal_img" src="/images/room_fan.png" alt="">
-                <img class="gal_img" src="/images/food.png" alt="">
-                <img class="gal_img" src="/images/room_blue.png" alt="">
-                <img class="gal_img" src="/images/bar.png" alt="">
+          </div>
+
+          <div class="links-wrapper">
+            <div class="quick-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Rooms & Rates</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
             </div>
-            <div class="gallery_imgs anime">
-                <img class="gal_img" src="/images/room_fan.png" alt="">
-                <img class="gal_img" src="/images/room.png" alt="">
-                <img class="gal_img" src="/images/restaurant.png" alt="">
-                <img class="gal_img" src="/images/room_blue.png" alt="">
-                <img class="gal_img" src="/images/food.png" alt="">
-                <img class="gal_img" src="/images/bar.png" alt="">
+
+            <div class="flickers">
+              <h3>Flickers</h3>
+              <ul class="flikers-links">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Privacy Policies</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
             </div>
-            <div class="gallery_imgs anime">
-                <img class="gal_img" src="/images/food.png" alt="">
-                <img class="gal_img" src="/images/room.png" alt="">
-                <img class="gal_img" src="/images/room_fan.png" alt="">
-                <img class="gal_img" src="/images/restaurant.png" alt="">
-                <img class="gal_img" src="/images/bar.png" alt="">
-                <img class="gal_img" src="/images/room_blue.png" alt="">
-            </div>
-            <div class="ind">
-                <i class="ind_item"></i>
-                <i class="ind_item"></i>
-                <i class="ind_item"></i>
-            </div>
+          </div>
         </div>
-        <!-- End of Gallery -->
 
-        <!-- Start of Footer -->
-        <footer>
-            <section class="footer-wrapper">
-                <div class="top-contents">
-                    <div class="about-us">
-                        <a href="#">
-                            <img src="images/logo.svg" alt="footer-logo" />
-                        </a>
-    
-                        <h3>About Us</h3>
-    
-                        <p class="about-text">Crystal Hotel is an elegant and stylish hotel that suites all your needs. Our hotel has all you need for maximum comfort and relaxation. Crystal hotlel is the best place to enjoy your life and get the best value for your money. Our staff are polite and decent in their jobs. Give us a try and you will never regret it because we ensure ultimate cutomer satisfaction.</p>
-                    </div>
-    
-                    <div class="links-wrapper">
-                        <div class="quick-links">
-                            <h3>Quick Links</h3>
-                            <ul>
-                                <li><a href="#">Service</a></li>
-                                <li><a href="#">Facilities</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Rooms & Rates</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
-                        </div>
-        
-                        <div class="flickers">
-                            <h3>Flickers</h3>
-                            <ul class="flikers-links">
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Reviews</a></li>
-                                <li><a href="#">Testimonials</a></li>
-                                <li><a href="#">Privacy Policies</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="social-links">
+          <p class="copyright">
+            Copyright &copy;2020 Crystal Hotel All rights reserved
+          </p>
 
-                <div class="social-links">
-                    <p class="copyright">Copyright &copy;2020 Crystal Hotel All rights reserved</p>
-    
-                    <ul class="social-icons">
-                        <li><a href="#"><img src="./images/icons/facebook-icon.svg" /></a></li>
-                        <li><a href="#"><img src="./images/icons/twitter-icon.svg" /></a></li>
-                        <li><a href="#"><img src="./images/icons/instagram-icon.svg" /></a></li>
-                    </ul>
-                </div>
-            </section>
-        </footer>
-        <!-- End of Footer -->
+          <ul class="social-icons">
+            <li>
+              <a href="#"><img src="./images/icons/facebook-icon.svg" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icons/twitter-icon.svg" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icons/instagram-icon.svg" /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <!-- End of Footer -->
 
-        <script src="scripts/main.js"></script>
-        <script src="scripts/index.js"></script>
-    </body>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
 </html>
