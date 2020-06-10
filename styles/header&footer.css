@@ -14,9 +14,16 @@ ul {
   list-style-type: none;
 }
 
+.fix-scroll {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 header {
   background: #261214;
   padding-top: 9px;
+  z-index: 1000;
 }
 
 header .navigation-wrapper {
