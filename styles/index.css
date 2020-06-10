@@ -111,7 +111,7 @@ body {
 
 .active,
 .topDot:hover {
-	background-color: #8f503f;
+	background-color: #261214;
 }
 
 /* Fading animation */
@@ -683,11 +683,11 @@ body {
 }
 
 .anime {
-	animation-name: fade;
+	animation-name: shift;
 	animation-duration: 1s;
 }
 
-@keyframes fade {
+@keyframes shift {
 	from {
 		opacity: 0.6;
 	}

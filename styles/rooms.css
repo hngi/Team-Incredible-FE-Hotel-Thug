@@ -132,7 +132,7 @@ section .card-container .card .content {
 
 .content .details .price {
     color: #8F503F;
-    font-weight: 500;
+    font-weight: bold;
     margin-right: 10px;
 }
 
