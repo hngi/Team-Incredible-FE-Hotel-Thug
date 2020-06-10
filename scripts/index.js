@@ -78,3 +78,56 @@ function moveSlides(n) {
     slides[slideStart-1].style.display = 'grid';
     indicator[slideStart-1].className += ' focus';
 }
+
+// Start of testimonial slides
+let displayedSlide = 1;
+displaySlideShow(displayedSlide);
+startSlideShow()
+
+function changeSlide(n) {
+  displaySlideShow(displayedSlide += n);
+}
+
+function displaySlide(n) {
+  displaySlideShow(displayedSlide = n);
+}
+
+function displaySlideShow(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide-content");
+
+  if (n > slides.length) {
+    displayedSlide = 1
+  } 
+
+  if (n < 1) {
+    displayedSlide = slides.length
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+
+  slides[displayedSlide-1].style.display = "block";
+}
+
+function startSlideShow() {
+  let i;
+  let slides = document.getElementsByClassName("slide-content");
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+
+  displayedSlide++;
+
+  if (displayedSlide > slides.length) {
+    displayedSlide = 1;
+  }
+
+  slides[displayedSlide - 1].style.display = 'block';
+  setTimeout(startSlideShow, 3000); // Change image every 3 seconds
+}
+
+
+
