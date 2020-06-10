@@ -344,11 +344,23 @@ body {
   max-width: 519px;
 }
 
+@media screen and (max-width: 860px) {
+  .top-rated-rooms .room-container .room .room-contents {
+    max-width: 100%;
+  }
+}
+
 .top-rated-rooms .room-container .room .room-contents h2 {
   font-size: 1.5rem;
   line-height: 36px;
   color: #8F503F;
   margin-bottom: 9px;
+}
+
+@media screen and (max-width: 1075px) {
+  .top-rated-rooms .room-container .room .room-contents h2 {
+    margin-top: .6rem;
+  }
 }
 
 .top-rated-rooms .room-container .room .room-contents .ratings {
@@ -374,6 +386,32 @@ body {
   font-size: 1.125rem;
   line-height: 27px;
   color: #8B8680;
+}
+
+@media screen and (max-width: 860px) {
+  .top-rated-rooms .room-container .room .room-contents .price-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .top-rated-rooms .room-container .room .room-contents .price-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .top-rated-rooms .room-container .room .room-contents .icons {
@@ -408,6 +446,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 410px) {
+  .top-rated-rooms .room-container .room .room-contents .room-price {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .top-rated-rooms .room-container .room .room-contents .room-price .book-room {
+    margin-top: .5rem;
+  }
 }
 
 .top-rated-rooms .room-container .room .room-contents .room-price h2 {
@@ -459,6 +512,8 @@ body {
 }
 
 .gallery_title {
+  font-size: 1.5rem;
+  line-height: 36px;
   color: #8F503F;
   margin: 10px 0 5px;
 }
@@ -466,7 +521,7 @@ body {
 .gallery_text {
   color: #8B8680;
   margin: 5px 0 10px;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: center;
 }
 
