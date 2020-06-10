@@ -133,13 +133,6 @@
       flex: 0.4;
    }
 
-   .restaurant-img > img,
-   .quality-spa-img > img,
-   .tennis-club-img > img,
-   .golf-club-img > img{
-      width: 500px;
-   }
-
 }
 
 @media(max-width: 1000px) {
