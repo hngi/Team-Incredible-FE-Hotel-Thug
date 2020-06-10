@@ -246,9 +246,8 @@ body {
 .hospitality-section-wrapper {
 	width: 100%;
 	height: 522px;
-	background: url("../images/Hospitality_room.png") center center
-			no-repeat,
-		rgb(0, 0, 0, 0.8);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/Hospitality_room.png");
+		/* rgb(0, 0, 0, 0.5); */
 	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -531,6 +530,23 @@ body {
 /* End of Top-Rated-Rooms Section */
 
 /* Testimonial Section */
+.tes-ind {
+	padding: 10px 0;
+	background-color: #fafafa;
+	text-align: center;
+}
+
+.tes-ind_item {
+	cursor: pointer;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 1px solid #000;
+	margin: 0 5px;
+	display: inline-block;
+}
+
 #testimonial {
 	background: url("../images/testimonial.png");
 	height: 493px;
@@ -570,6 +586,7 @@ body {
 .content .image {
 	margin: 1rem;
 }
+
 
 .content .text p:last-of-type {
 	margin-top: 1.5rem;

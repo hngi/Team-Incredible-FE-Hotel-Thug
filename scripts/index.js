@@ -55,7 +55,7 @@ function startTopSlides() {
 startTopSlides();
 // End of Top SlideShow/Carousel
 
-// Gallery Slide start
+// Gallery Slide
 let slideStart = 0;
 moveSlides(slideStart);
 
@@ -78,6 +78,7 @@ function moveSlides(n) {
     slides[slideStart-1].style.display = 'grid';
     indicator[slideStart-1].className += ' focus';
 }
+// End Gallery Slide
 
 //Sticky Navbar
 window.onscroll = () => {fixFunction()};
@@ -94,52 +95,42 @@ fixFunction = () => {
 }
 //End Sticky Navbar
 
-// Start of testimonial slides
-let displayedSlide = 1;
-displaySlideShow(displayedSlide);
-startSlideShow()
+// Testimonial Slide
+let tesStart = 1;
+tesSlides(tesStart);
 
-function changeSlide(n) {
-  displaySlideShow(displayedSlide += n);
+function forwardSlides(n) {
+  tesSlides(tesStart += n);
 }
 
-function displaySlide(n) {
-  displaySlideShow(displayedSlide = n);
+function tesSlides(n) {
+  var i;
+  var shifts = document.getElementsByClassName("content");
+  //var dots = document.getElementsByClassName("dot");
+  if (n > shifts.length) {tesStart = 1}
+  if (n < 1) {tesStart = shifts.length}
+  for (i = 0; i < shifts.length; i++) {
+      shifts[i].style.display = "none";
+  }
+  // for (i = 0; i < dots.length; i++) {
+  //     dots[i].className = dots[i].className.replace(" active", "");
+  // }
+  shifts[tesStart-1].style.display = "block";
+  //dots[tesStart-1].className += " active";
 }
 
-function displaySlideShow(n) {
-  let i;
-  let slides = document.getElementsByClassName("slide-content");
-
-  if (n > slides.length) {
-    displayedSlide = 1
-  } 
-
-  if (n < 1) {
-    displayedSlide = slides.length
+let tesAuto = 0;
+function tesSlidesAuto() {
+  var i;
+  var shiftAuto = document.getElementsByClassName("content");
+  for (i = 0; i < shiftAuto.length; i++) {
+    shiftAuto[i].style.display = "none";
   }
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
-  }
-
-  slides[displayedSlide-1].style.display = "block";
+  
+  tesAuto++;
+  if (slideIndex > shiftAuto.length) {slideIndex = 1}
+  shiftAuto[slideIndex-1].style.display = "block";
+  setTimeout(tesSlidesAuto, 4000); // Change image every 2 seconds
 }
-
-function startSlideShow() {
-  let i;
-  let slides = document.getElementsByClassName("slide-content");
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-
-  displayedSlide++;
-
-  if (displayedSlide > slides.length) {
-    displayedSlide = 1;
-  }
-
-  slides[displayedSlide - 1].style.display = 'block';
-  setTimeout(startSlideShow, 3000); // Change image every 3 seconds
-}
+tesSlidesAuto();
+// End Testimonial Slide
