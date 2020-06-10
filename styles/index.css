@@ -177,7 +177,7 @@ body {
 
 .about-section-wrapper .about-section-contents {
 	max-width: 1440px;
-	margin-top: auto;
+	margin: auto;
 	padding: 0 6.875rem 0 6.4rem;
 	display: -ms-grid;
 	display: grid;
@@ -289,7 +289,7 @@ body {
 
 .top-rated-rooms .room-container {
 	max-width: 1440px;
-	margin-top: auto;
+	margin: auto;
 	padding: 0 6.875rem 0 6.4rem;
 }
 
