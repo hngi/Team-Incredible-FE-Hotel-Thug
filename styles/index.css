@@ -710,7 +710,7 @@ h1, h2, h3 {
     margin-bottom: 1.5rem;
 }
 
-.container {
+.testimonial-container {
     width: 85%;
     margin: auto;
     display: flex;
@@ -778,7 +778,7 @@ h1, h2, h3 {
         width: fit-content;
     }
 
-    .container {
+    .testimonial-container {
         width: 90%;
     }
 
