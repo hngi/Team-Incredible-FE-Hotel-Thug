@@ -246,9 +246,9 @@ body {
 .hospitality-section-wrapper {
 	width: 100%;
 	height: 522px;
-	background: url("../images/hospitality-background.jpg") center center
+	background: url("../images/Hospitality_room.png") center center
 			no-repeat,
-		rgba(64, 48, 50, 0.55);
+		rgb(0, 0, 0, 0.8);
 	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
