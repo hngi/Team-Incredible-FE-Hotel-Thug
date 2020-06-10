@@ -55,3 +55,26 @@ function startTopSlides() {
 startTopSlides();
 // End of Top SlideShow/Carousel
 
+// Gallery Slide start
+let slideStart = 0;
+moveSlides(slideStart);
+
+function activeSlide(n) {
+    moveSlides(slideStart = n);
+}
+
+function moveSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName('gallery_imgs');
+    let indicator = document.getElementsByClassName('ind_item');
+    if (n > slides.length) {slideStart = 1}
+    if (n < 1) {slideStart = slides.length}
+    for (i=0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    for (i = 0; i < indicator.length; i++) {
+        indicator[i].className = indicator[i].className.replace(' focus', '');
+    }
+    slides[slideStart-1].style.display = 'grid';
+    indicator[slideStart-1].className += ' focus';
+}
