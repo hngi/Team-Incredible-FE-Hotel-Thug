@@ -105,7 +105,6 @@ h1, h2, h3 {
     }
 }
 
-=======
 .container-fe {
     width: 90%;
     margin: auto;
@@ -592,14 +591,6 @@ ul.icons li {
 }
   /* RESPONSIVENESS END */
 
-
-
-
-
-
-
-
-=======
 /* Gallery Section */
 .gallery_wrap {
     display: flex;
@@ -765,8 +756,5 @@ ul.icons li {
         font-size: 14px;
     }
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 1cc2a6769abb9a9d6597339b26b811cff33440b7
