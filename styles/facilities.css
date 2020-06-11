@@ -142,9 +142,10 @@
    .golf-club,
    .quality-spa,
    .tennis-club{
-      display: grid;
-      grid-template-columns: 1;
+      flex: 1;
+      flex-direction: column;
    }
+
    .restaurant,
    .golf-club,
    .quality-spa,
